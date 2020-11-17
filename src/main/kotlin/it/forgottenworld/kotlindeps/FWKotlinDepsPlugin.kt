@@ -9,8 +9,5 @@ class CrossbowCTFPlugin : JavaPlugin() {
         logger.info("KotlinDeps loaded")
     }
 
-    override fun onDisable() {
-        super.onDisable()
-    }
 }
 
