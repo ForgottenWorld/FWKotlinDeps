@@ -7,10 +7,10 @@ plugins {
 
 repositories {
     mavenLocal()
-    maven { url = uri("https://mvnrepository.com/") }
-    maven { url = uri("https://papermc.io/repo/repository/maven-public/") }
-    maven { url = uri("https://jitpack.io") }
-    maven { url = uri("https://repo.maven.apache.org/maven2/") }
+    jcenter()
+    mavenCentral()
+    maven("https://papermc.io/repo/repository/maven-public/")
+    maven("https://jitpack.io")
 }
 
 dependencies {
@@ -23,7 +23,7 @@ dependencies {
 }
 
 group = "it.forgottenworld"
-version = "0.0.3"
+version = "0.0.4"
 description = "FWKotlinDeps"
 java.sourceCompatibility = JavaVersion.VERSION_1_8
 
@@ -33,6 +33,6 @@ publishing {
     }
 }
 
-tasks.withType<JavaCompile>() {
+tasks.withType<JavaCompile> {
     options.encoding = "UTF-8"
 }
