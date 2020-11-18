@@ -2,7 +2,7 @@ package it.forgottenworld.kotlindeps
 
 import org.bukkit.plugin.java.JavaPlugin
 
-class CrossbowCTFPlugin : JavaPlugin() {
+class FWKotlinDepsPlugin : JavaPlugin() {
 
     override fun onEnable() {
         super.onEnable()
