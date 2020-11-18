@@ -3,4 +3,4 @@ version: "0.0.2"
 api-version: "1.16"
 description: Plugin for handling dependencies for the ForgottenWorld project Kotlin plugins
 author: Shivs (OhMeMuffin)
-main: it.forgottenworld.fwkotlindeps.FWKotlinDepsPlugin
+main: it.forgottenworld.kotlindeps.FWKotlinDepsPlugin
