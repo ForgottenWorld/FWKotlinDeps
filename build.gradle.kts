@@ -16,8 +16,8 @@ repositories {
 
 dependencies {
     compileOnly("com.destroystokyo.paper:paper-api:1.16.4-R0.1-SNAPSHOT")
-    compileOnly("com.github.shynixn.mccoroutine:mccoroutine-bukkit-api:0.0.6")
-    compileOnly("com.github.shynixn.mccoroutine:mccoroutine-bukkit-core:0.0.6")
+    implementation("com.github.shynixn.mccoroutine:mccoroutine-bukkit-api:0.0.6")
+    implementation("com.github.shynixn.mccoroutine:mccoroutine-bukkit-core:0.0.6")
     implementation("io.github.rybalkinsd:kohttp:0.12.0")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.4.21")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.2")
@@ -26,7 +26,7 @@ dependencies {
 }
 
 group = "it.forgottenworld"
-version = "0.0.6"
+version = "0.0.7"
 description = "FWKotlinDeps"
 java.sourceCompatibility = JavaVersion.VERSION_1_8
 
