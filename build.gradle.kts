@@ -23,9 +23,7 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.2")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.0.1")
     implementation("com.charleskorn.kaml:kaml:0.26.0")
-    implementation("org.koin:koin-core:2.2.2")
     implementation("com.github.BrunoSilvaFreire:Skedule:0.1.3")
-
 }
 
 group = "it.forgottenworld"
