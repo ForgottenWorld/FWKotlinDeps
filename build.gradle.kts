@@ -2,15 +2,13 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     java
-    maven
-    kotlin("jvm") version "1.4.31"
-    kotlin("plugin.serialization") version "1.4.31"
+    kotlin("jvm") version "1.4.32"
+    kotlin("plugin.serialization") version "1.4.32"
     id("com.github.johnrengelman.shadow") version "6.1.0"
     id("com.github.ben-manes.versions") version "0.38.0"
 }
 
 repositories {
-    jcenter()
     mavenCentral()
     maven("https://papermc.io/repo/repository/maven-public/")
     maven("https://jitpack.io")
@@ -19,15 +17,23 @@ repositories {
 dependencies {
     compileOnly("com.destroystokyo.paper:paper-api:1.16.5-R0.1-SNAPSHOT")
     implementation("io.github.rybalkinsd:kohttp:0.12.0")
-    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.4.31")
+    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.4.32")
+    implementation("org.jetbrains.kotlin:kotlin-reflect:1.4.32")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.3")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.1.0")
-    implementation("com.charleskorn.kaml:kaml:0.28.3")
+    implementation("com.charleskorn.kaml:kaml:0.30.0")
     implementation("com.github.BrunoSilvaFreire:Skedule:0.1.3")
+
+    val exposedVersion = "0.30.2"
+
+    implementation("org.jetbrains.exposed:exposed-core:$exposedVersion")
+    implementation("org.jetbrains.exposed:exposed-dao:$exposedVersion")
+    implementation("org.jetbrains.exposed:exposed-jdbc:$exposedVersion")
+    implementation("org.jetbrains.exposed:exposed-java-time:$exposedVersion")
 }
 
 group = "it.forgottenworld"
-version = "0.0.9"
+version = "0.1.0"
 description = "FWKotlinDeps"
 java.sourceCompatibility = JavaVersion.VERSION_1_8
 
